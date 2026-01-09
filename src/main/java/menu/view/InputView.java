@@ -27,4 +27,23 @@ public class InputView {
 
         return names;
     }
+
+    public static List<String> readIsInedibleMenu(String coach) {
+        System.out.println(coach + "(이)가 못 먹는 메뉴를 입력해 주세요.");
+        String input = Console.readLine();
+
+        List<String> menus = Arrays.stream(input.split(","))
+                .map(String::trim)
+                .toList();
+
+        InputValidator.validateDuplicate(menus);
+        InputValidator.validateHasBlankName(menus);
+        InputValidator.validateMenuCount(menus);
+
+//        for (String name : menus) {
+//            InputValidator.validateMenuInMenuBoard(name);
+//        }
+
+        return menus;
+    }
 }
