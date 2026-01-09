@@ -40,10 +40,6 @@ public class InputView {
         InputValidator.validateHasBlankName(menus);
         InputValidator.validateMenuCount(menus);
 
-//        for (String name : menus) {
-//            InputValidator.validateMenuInMenuBoard(name);
-//        }
-
         return menus;
     }
 }

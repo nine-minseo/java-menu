@@ -74,6 +74,7 @@ public class Application {
             }
         }
 
+        OutputView.printRecommendedMenuMessage();
         OutputView.printCategories(categoriesByDay);
         OutputView.printCoachMenus(coaches);
         OutputView.printRecommendEndMessage();

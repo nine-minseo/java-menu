@@ -41,4 +41,10 @@ public class InputValidator {
             throw new IllegalArgumentException("[ERROR] 코치가 못 먹는 메뉴는 최소 0개, 최대 2개 입력되어야 합니다.");
         }
     }
+
+//    public static void validateMenuInMenuBoard(List<String> menus) {
+//        if () {
+//            throw new IllegalArgumentException("[ERROR] 메뉴판에 없는 메뉴가 입력되었습니다.");
+//        }
+//    }
 }
