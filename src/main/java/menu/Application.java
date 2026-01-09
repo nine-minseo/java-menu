@@ -73,6 +73,10 @@ public class Application {
                 }
             }
         }
+
+        OutputView.printCategories(categoriesByDay);
+        OutputView.printCoachMenus(coaches);
+        OutputView.printRecommendEndMessage();
     }
 
     private static <T> T retryUntilValid(Supplier<T> supplier) {
