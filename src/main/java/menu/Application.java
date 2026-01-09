@@ -11,7 +11,8 @@ public class Application {
         OutputView.printRecommendStartMessage();
 
         List<String> coachNames = retryUntilValid(InputView::readCoachNames);
-        System.out.println(coachNames);
+
+
     }
 
     private static <T> T retryUntilValid(Supplier<T> supplier) {
